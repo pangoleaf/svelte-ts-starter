@@ -66,10 +66,10 @@ export default {
 			inlineSources: !production
 		}),
         alias({
-            entries: {
+            entries: [
                 // mirror tsconfig paths here
-                // "@utils": "src/utils",
-            }
+                // { find: '@utils', replacement: require('path').resolve(__dirname, './src/utils') },
+            ]
         }),
 
 		// In dev mode, call `npm run start` once
